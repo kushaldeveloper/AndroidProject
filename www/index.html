@@ -41,12 +41,16 @@
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
+                <button onclick="scanBarCode()">Click Me to scan barcode</button>
             </div>
             <!--button id = "btn1">Click</button>
             <img src = "" id = "myImage"/!-->
-            <button id ="btn2">Click Me to scan barcode</button>
+           
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+         <script type="text/javascript">
+            app.initialize();
+        </script>
     </body>
 </html>
