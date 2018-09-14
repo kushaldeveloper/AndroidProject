@@ -21,18 +21,19 @@ document.addEventListener("deviceready",onDeviceReady,false);
 						  alert('Failed because: ' + message); 
 					   }
 
-	/*function scanBarCode(){
+	function scanBarCode(){
 		alert('barcode scanner is starting');
 		cordova.plugins.barcodeScanner.scan(result,error);
       function (result) {
-          alert("We got a barcode\n" +
+          alert("Barcode found\n" +
                 "Result: " + result.text + "\n" +
                 "Format: " + result.format + "\n" +
                 "Cancelled: " + result.cancelled);
       }
-  };
       function (error) {
-          alert("Scanning failed: " + error);
-      }*/
+          alert("you need to download barcodescanner" + error);
+      }
 					   
+}
+
 }
