@@ -23,8 +23,7 @@ document.addEventListener("deviceready",onDeviceReady,false);
 
 	function scanBarCode(){
 		alert('barcode scanner is starting');
-		cordova.plugins.barcodeScanner.scan(result,error);
-      function (result) {
+		cordova.plugins.barcodeScanner.scan(function (result) {
           alert("Barcode found\n" +
                 "Result: " + result.text + "\n" +
                 "Format: " + result.format + "\n" +
@@ -32,8 +31,8 @@ document.addEventListener("deviceready",onDeviceReady,false);
       }
       function (error) {
           alert("you need to download barcodescanner" + error);
-      }
+      });
 					   
-}
 
+	}
 }
