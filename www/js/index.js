@@ -9,7 +9,7 @@ document.addEventListener("deviceready",onDeviceReady,false);
             alert("encoding failed: " + fail);
           }
         );
-	/*function cameraTakePicture(){
+	/**function cameraTakePicture(){
 		alert("camera is starting");
 		alert("camera :" +navigator.camera);
 		alert("camera :"+ navigator.camera.getPicture);
@@ -26,7 +26,7 @@ document.addEventListener("deviceready",onDeviceReady,false);
 						function onFail(message) { 
 						  alert('Failed because: ' + message); 
 					   }
-					   */
+					   **/
 
 	function scanBarCode(){
 		alert('barcode scanner is starting');
