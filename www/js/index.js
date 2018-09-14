@@ -19,7 +19,7 @@ document.addEventListener("deviceready",onDeviceReady,false);
 					   } 
 						function onFail(message) { 
 						  alert('Failed because: ' + message); 
-					   } 
+					   }
 
 	/*function scanBarCode(){
 		alert('barcode scanner is starting');
