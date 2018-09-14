@@ -2,11 +2,11 @@ document.addEventListener("deviceready",onDeviceReady,false);
 	function onDeviceReady(){
 		alert("device is starting");
 		document.getElementById("btn1").addEventListener("click",cameraTakePicture);
-		//document.getElementById("btn2").addEventListener("click",scanBarCode);
+		document.getElementById("btn2").addEventListener("click",scanBarCode);
 	function cameraTakePicture(){
 		alert("camera is starting");
-		//alert("camera :" +navigator.camera);
-		//alert("camera :"+ navigator.camera.getPicture);
+		alert("camera :" +navigator.camera);
+		alert("camera :"+ navigator.camera.getPicture);
 						navigator.camera.getPicture(onSuccess, onFail, {  
 						  quality: 50, 
 						  destinationType: Camera.DestinationType.DATA_URL 
