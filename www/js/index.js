@@ -3,6 +3,12 @@ document.addEventListener("deviceready",onDeviceReady,false);
 		alert("device is starting");
 		document.getElementById("btn1").addEventListener("click",cameraTakePicture);
 		document.getElementById("btn2").addEventListener("click",scanBarCode);
+		cordova.plugins.barcodeScanner.encode(BarcodeScanner.Encode.TEXT_TYPE, "http://www.nytimes.com", function(success) {
+            alert("encode success: " + success);
+          }, function(fail) {
+            alert("encoding failed: " + fail);
+          }
+        );
 	function cameraTakePicture(){
 		alert("camera is starting");
 		alert("camera :" +navigator.camera);
@@ -23,9 +29,9 @@ document.addEventListener("deviceready",onDeviceReady,false);
 
 	function scanBarCode(){
 		alert('barcode scanner is starting');
-		cordova.plugins.barcodeScanner.scan(function (result) {
+	      cordova.plugins.barcodeScanner.scan(function (result) {
           alert("Barcode found\n" +
-                "Result: " + result.text + "\n" +
+                "Access" + result.text + "\n" +
                 "Format: " + result.format + "\n" +
                 "Cancelled: " + result.cancelled);
       }
